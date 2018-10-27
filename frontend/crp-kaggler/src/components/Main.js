@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './Main.css';
 import './dashboardcard/DashboardCard';
 import DashboardCard from './dashboardcard/DashboardCard';
+import './graphcard/GraphCard';
+import GraphCard from './graphcard/GraphCard';
 
 class Main extends Component {
 
@@ -22,6 +24,10 @@ class Main extends Component {
         <DashboardCard stats={this.state.stats}>
 
         </DashboardCard>
+
+        <GraphCard>
+
+        </GraphCard>
       </div>
     );
   }
