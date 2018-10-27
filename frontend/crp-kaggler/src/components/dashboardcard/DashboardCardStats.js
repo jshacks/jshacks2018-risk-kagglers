@@ -9,7 +9,7 @@ class DashboardCardStats extends Component {
             <div className="card-stats">
                 <div className="medium-title">Total predicted revenue</div>
                 <div className="large-font">
-                   <i class="fas fa-dollar-sign currency"></i>{this.props.stats.totalValue}
+                   <i className="fas fa-dollar-sign currency"></i>{this.props.stats.totalValue}
                 </div>
                 
                 <div className="medium-label">
@@ -18,7 +18,7 @@ class DashboardCardStats extends Component {
 
                 <div className="large-button">
                     <span className="btn-label"> View Details</span>   
-                    <i class="fas fa-arrow-circle-right btn-icon"></i>
+                    <i clasName="fas fa-arrow-circle-right btn-icon"></i>
                 </div>
 
             </div>

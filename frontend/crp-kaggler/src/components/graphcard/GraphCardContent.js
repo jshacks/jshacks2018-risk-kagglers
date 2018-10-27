@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-
 import './graph.css';
 import ReactFC from 'react-fusioncharts';
-
-// Step 3 - Including the fusioncharts library
 import FusionCharts from 'fusioncharts';
-
-// Step 4 - Including the chart type
 import Column2D from 'fusioncharts/fusioncharts.charts';
-
-// Step 5 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-// Step 6 - Adding the chart as dependency to the core fusioncharts
+// import PowerChart from 'fusioncharts/fusioncharts.powercharts';
+// import WidgetsCharts from 'fusioncharts/fusioncharts.widgets';
+// import GanntCharts from 'fusioncharts/fusioncharts.gantt';
+// import TreemapChart from 'fusioncharts/fusioncharts.treemap';
+// import Zoomscatter from 'fusioncharts/fusioncharts.zoomscatter';
+
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
-
-
-
-// Step 7 - Creating the JSON object to store the chart configurations
+//the json
 const chartConfigs = {
     type: 'column2d',// The chart type
     width: '700', // Width of the chart
@@ -65,8 +59,10 @@ const chartConfigs = {
 class GraphCardContent extends Component {
 	render() {
 	     return (
+	     	<div className="graph-content">
 	     <ReactFC
 	        {...chartConfigs}/>
+	        </div>
 	     );
 	  }
 
