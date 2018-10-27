@@ -19,8 +19,6 @@ class Main extends Component {
     return (
       <div className="main">
       
-        main<i className="fa fa-car"></i>
-      
         <DashboardCard stats={this.state.stats}>
 
         </DashboardCard>
