@@ -4,7 +4,7 @@ import './Main.css';
 class Main extends Component {
   render() {
     return (
-      <div className="main">main</div>
+      <div className="main">main<i className="fa fa-car"></i></div>
     );
   }
 }
