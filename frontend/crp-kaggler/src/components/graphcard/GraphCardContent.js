@@ -13,7 +13,7 @@ import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 //the json
 const chartConfigs = {
-    type: 'column2d',// The chart type
+    type: 'line',// The chart type
     width: '700', // Width of the chart
     height: '400', // Height of the chart
     dataFormat: 'json', // Data type
@@ -52,6 +52,9 @@ const chartConfigs = {
         }, {
             "label": "China",
             "value": "30"
+        },{
+            "label": "Romania",
+            "value": "10"
         }]
     }
 };
