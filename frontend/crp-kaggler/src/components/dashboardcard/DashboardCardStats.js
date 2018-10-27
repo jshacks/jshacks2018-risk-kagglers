@@ -18,7 +18,7 @@ class DashboardCardStats extends Component {
 
                 <div className="large-button">
                     <span className="btn-label"> View Details</span>   
-                    <i clasName="fas fa-arrow-circle-right btn-icon"></i>
+                    <i className="fas fa-arrow-circle-right btn-icon"></i>
                 </div>
 
             </div>
