@@ -5,11 +5,11 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <button className="menu_button">
+        <button className="menu_button square">
           <i className="fas fa-bars"></i>
         </button>
         <button className="logo">logo</button>
-        <button className="notification_button">
+        <button className="notification_button square">
           <i className="fas fa-bell"></i>
         </button>
         <div className="user_info">
