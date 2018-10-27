@@ -6,4 +6,4 @@ A conda env with:
 - tensorflow and all other standard ml packages
 
 ## Getting started
-1. Unzip in/in.zip in the same folder
+1. Unzip in/*.zip in the same folder
