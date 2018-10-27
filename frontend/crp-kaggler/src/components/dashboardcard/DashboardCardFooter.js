@@ -7,7 +7,7 @@ class DashboardCardFooter extends Component {
     render() {
         return (
             <div className="card-footer">
-                <div className="small-label">Goal: <i class="fas fa-dollar-sign"></i><span>34235</span> </div>
+                <div className="small-label">Goal: <i className="fas fa-dollar-sign"></i><span>34235</span> </div>
                 <div className="small-label">Timeframe: <span>4y</span></div>
             </div>
         );
