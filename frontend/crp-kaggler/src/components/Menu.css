@@ -13,7 +13,12 @@
 	height:50px;
  }
 
- .menu button:hover {
-    color: #4C84FF; 
-    border-right: 2px solid #4C84FF ;
+.menu button:hover {
+    color: #4C84FF;
+    border-right: 2px solid #4C84FF;
+}
+
+.menu button.active {
+    color: #4C84FF;
+    border-right: 2px solid #4C84FF;
 }
