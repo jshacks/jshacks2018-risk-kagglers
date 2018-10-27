@@ -1,8 +1,4 @@
 .idea
 .ipynb_checkpoints
-ml/in/test.csv
-ml/in/train.csv
-ml/in/test-flat.csv
-ml/in/train-flat.csv
+ml/in/*.csv
 **/**/node_modules
-ml/in/sample_submission.csv
