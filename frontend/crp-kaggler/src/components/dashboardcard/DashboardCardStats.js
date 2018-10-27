@@ -7,7 +7,7 @@ class DashboardCardStats extends Component {
     render() {
         return (
             <div className="card-stats">
-                <div className="medium-title">Total predicted revenu</div>
+                <div className="medium-title">Total predicted revenue</div>
                 <div className="large-font">
                    <i class="fas fa-dollar-sign currency"></i>{this.props.stats.totalValue}
                 </div>
