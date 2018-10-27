@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
+import userImage from '../t_user.jpg';
 
 class Header extends Component {
   render() {
@@ -13,7 +14,7 @@ class Header extends Component {
           <i className="fas fa-bell"></i>
         </button>
         <div className="user_info">
-          <div className="user_image">user image</div>
+          <div className="user_image"><img src={userImage} /></div>
           <div className="user_name">Huge Jackman</div>
         </div>
       </div>
