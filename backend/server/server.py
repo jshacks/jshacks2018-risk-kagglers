@@ -10,7 +10,7 @@ app = Flask(__name__)
 api = Api(app)
 
 df = pd.read_csv(os.path.abspath(os.path.join(os.path.dirname( __file__ ), '../..', 'ml/in/train-pruned.csv')))
-#full_df = test_df.merge(train_df)
+df_predictions = pd.read_csv(os.path.abspath(os.path.join(os.path.dirname( __file__ ), '../..', 'ml/in/submission_rnn.csv')))
 
 parser = reqparse.RequestParser()
 parser.add_argument('task')
@@ -51,14 +51,30 @@ class Visit(Resource):
         
 
 class Visitor(Resource):
-    def get(self, visitor_id):
+    def get(self, visitor_id):        
+        result = df.loc[df['fullVisitorId'] == int(visitor_id)]
         
-        pass             
+        list = dataframe_rows_to_json_list(result)
+        return list             
+
+
+class PredictedRevenue(Resource):
+    def get(self, visitor_id):
+        result = df_predictions.loc[df_predictions['fullVisitorId'] == visitor_id]
+        
+        predictedRevenueObj = row_to_obj(result.iloc[0])
+        return predictedRevenueObj
+      
+
 
 
 api.add_resource(Visit, '/current')
-api.add_resource(Visitor, '/current/<visitorId>')
-#api.add_resource(Visit, '/predicted')
+
+# visits list by visitor id
+api.add_resource(Visitor, '/current/<visitor_id>')
+
+# predicted revenue by visitor_id
+api.add_resource(PredictedRevenue, '/predicted/<visitor_id>')
 
 
 if __name__ == '__main__':
