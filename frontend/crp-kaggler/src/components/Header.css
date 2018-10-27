@@ -1,0 +1,48 @@
+.header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #E6E7EB;
+    display: flex;
+}
+
+.menu_button {
+    padding: 20px;
+    border-right: 1px solid #E6E7EB;
+    color: #BFC5D1;
+}
+
+.menu_button:hover {
+    color: #4C84FF;
+}
+
+.space {
+    flex: 1;
+}
+
+.logo {
+    margin-left: 20px;
+    padding: 20px 0;
+}
+
+.user_info {
+    display: flex;
+}
+
+.notification_button {
+    margin-left: auto;
+    padding: 20px;
+    border-left: 1px solid #E6E7EB;
+    color: #BFC5D1;
+}
+
+.notification_button:hover {
+    color: #4C84FF;
+}
+
+.user_info {
+    padding: 20px;
+    border-left: 1px solid #E6E7EB;
+}
+
+.user_image {
+    margin-right: 10px;
+}

@@ -6,9 +6,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #F5F6FA;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
