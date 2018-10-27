@@ -1,0 +1,19 @@
+.menu {
+	background: #FFFFFF;
+    border-right: 1px solid #E6E7EB;
+	display:flex;
+	flex-direction: column;
+	width:50px;
+	padding:50px 0;
+}
+
+.menu button { 
+	color: #BFC5D1;
+	border-right: 2px solid transparent ;
+	height:50px;
+ }
+
+ .menu button:hover {
+    color: #4C84FF; 
+    border-right: 2px solid #4C84FF ;
+}

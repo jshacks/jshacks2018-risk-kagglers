@@ -4,7 +4,10 @@ import './Menu.css';
 class Menu extends Component {
   render() {
     return (
-      <div className="menu">menu</div>
+      <div className="menu">
+      	<button className="home"><i className="fas fa-home"></i></button>
+		<button className="settings"><i className="fas fa-cog"></i></button>
+      </div>
     );
   }
 }
