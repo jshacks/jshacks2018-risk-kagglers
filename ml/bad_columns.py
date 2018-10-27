@@ -1,0 +1,11 @@
+bad_columns = ["sessionId", "socialEngagementType", "visitId", "visitStartTime",
+               "device.browserSize", "device.browserVersion", "device.deviceCategory", "device.flashVersion",
+               "device.isMobile", "device.language", "device.mobileDeviceBranding", "device.mobileDeviceInfo",
+               "device.mobileDeviceMarketingName", "device.mobileDeviceModel", "device.mobileInputSelector",
+               "device.operatingSystemVersion", "device.screenColors", "device.screenResolution",
+               "geoNetwork.cityId", "geoNetwork.latitude", "geoNetwork.longitude", "geoNetwork.metro",
+               "geoNetwork.networkLocation", "geoNetwork.region", "totals.bounces", "totals.newVisits", "totals.visits",
+               "trafficSource.adwordsClickInfo.criteriaParameters", "trafficSource.adwordsClickInfo.isVideoAd",
+               "trafficSource.adwordsClickInfo.slot", "trafficSource.campaign", "trafficSource.campaignCode",
+               "trafficSource.isTrueDirect", "trafficSource.medium", "trafficSource.referralPath",
+              ]
