@@ -14,8 +14,8 @@ class UserClustering extends Component {
                 
                 <ScatterChart width={500} height={250} margin={{top: 20, right: 20, bottom: 20, left: 20}}>
                     <CartesianGrid />
-                    <XAxis dataKey={'x'} type="number"/>
-                    <YAxis dataKey={'y'} type="number"/>
+                    <XAxis dataKey={'x'} type="number" name="Page visits"/>
+                    <YAxis dataKey={'y'} type="number" name="Revenue"/>
                     <Scatter name='Customer' data={data} fill='#8884d8'/>
                     <Tooltip cursor={{strokeDasharray: '3 3'}}/>
                     <Legend />
