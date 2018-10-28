@@ -1,2 +1,2 @@
 # The Rising Kagglers
-## Google Analytics Customer Revenue Prediction
+Customer revenue prediction using Google Analytics data
