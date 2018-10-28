@@ -1,7 +1,32 @@
-.list_card {
-  background-color: white;
-  border: 1px solid #E6E7EB;
-  margin: 20px;
-  border-radius: 5px;
+.wrapper {
   padding: 30px 30px 20px 30px;
+}
+
+.list {
+  text-align: left;
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.list th {
+  color: #8C94A7;
+  font-weight: 500;
+}
+
+.list th,
+.list td {
+  padding: 10px;
+  border-bottom: 1px solid #E6E7EB;
+  font-size: 14px;
+}
+
+.list th:first-child,
+.list td:first-child {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.list tr:last-child td {
+  border-bottom: none;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './graph.css';
-import { BarChart, XAxis, YAxis, Bar, Legend } from 'recharts';
+import { BarChart, XAxis, YAxis, Bar, Legend, Tooltip } from 'recharts';
 
 
 
@@ -24,11 +24,12 @@ class GraphCardContent extends Component {
             <div className="graph-content">
             <div className="medium-title">Last year vs this year</div>
             <br />
-            <BarChart width={600} height={250} data={data}>
+            <BarChart width={500} height={250} data={data}>
             <XAxis dataKey="name"  />
             <YAxis />
             <Bar dataKey="2017" fill="#FEC400" />
             <Bar dataKey="2018" fill="#4C84FF" />
+            <Tooltip />
             <Legend />
             </BarChart>
             </div>
