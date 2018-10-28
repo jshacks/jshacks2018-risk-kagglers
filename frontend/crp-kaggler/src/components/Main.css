@@ -1,9 +1,10 @@
 .main {
-	flex: 1;
-	padding: 60px;
-	overflow: auto;
+    flex: 1;
+    padding: 60px;
+    overflow: auto;
+    display: flex;
 }
 
 .row {
-	display: flex;
+    display: flex;
 }

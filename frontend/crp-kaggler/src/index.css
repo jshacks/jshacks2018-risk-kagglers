@@ -31,3 +31,11 @@ button.square {
 .root {
   height: 100%;
 }
+
+.subtitle {
+  color: #8C94A7;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid #E6E7EB;
+}
