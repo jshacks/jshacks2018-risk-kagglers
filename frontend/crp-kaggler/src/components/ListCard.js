@@ -3,6 +3,7 @@ import './ListCard.css';
 
 class ListCard extends Component {
   render() {
+    const visitors = this.props.visitors;
     return (
       <div className="list_card card-content">
         <div className="wrapper">
@@ -15,46 +16,12 @@ class ListCard extends Component {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>7639415621470426868</td>
-                <td>785500</td>
-              </tr>
-              <tr>
-                <td>7639415621470426868</td>
-                <td>785500</td>
-              </tr>
-              <tr>
-                <td>7639415621470426868</td>
-                <td>785500</td>
-              </tr>
-              <tr>
-                <td>7639415621470426868</td>
-                <td>785500</td>
-              </tr>
-              <tr>
-                <td>7639415621470426868</td>
-                <td>785500</td>
-              </tr>
-              <tr>
-                <td>7639415621470426868</td>
-                <td>785500</td>
-              </tr>
-              <tr>
-                <td>7639415621470426868</td>
-                <td>785500</td>
-              </tr>
-              <tr>
-                <td>7639415621470426868</td>
-                <td>785500</td>
-              </tr>
-              <tr>
-                <td>7639415621470426868</td>
-                <td>785500</td>
-              </tr>
-              <tr>
-                <td>7639415621470426868</td>
-                <td>785500</td>
-              </tr>
+              {visitors.map((visitor, key) => (
+                <tr key={key}>
+                  <td>{visitor.fullVisitorId}</td>
+                  <td>{visitor["totals.pageviews"]}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

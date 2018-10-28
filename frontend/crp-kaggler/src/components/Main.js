@@ -12,9 +12,21 @@ class Main extends Component {
          stats: {
            totalValue: "463463",
            relativeValue: "5.69"
-         }
+         },
+         visitors : []
       }
    }
+
+  componentDidMount() {
+    fetch('http://localhost:3000/api/')
+    .then(results => {
+      return results.json();
+    })
+    .then(data => {
+      console.log(data);
+      this.setState({visitors: data});
+    })
+  }
 
   render() {
     return (
@@ -29,7 +41,7 @@ class Main extends Component {
 
         <div className="row">
 
-          <ListCard />
+          <ListCard visitors={this.state.visitors}/>
 
         </div>
 
