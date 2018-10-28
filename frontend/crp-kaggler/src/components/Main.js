@@ -4,6 +4,7 @@ import DashboardCard from './dashboardcard/DashboardCard';
 import GraphCard from './graphcard/GraphCard';
 import ListCard from './ListCard';
 import UserClustering from './UserClustering';
+import InfoCard from './InfoCard';
 
 class Main extends Component {
 
@@ -32,19 +33,25 @@ class Main extends Component {
   render() {
     return (
       <div className="main">
+        
+        <div className="column column_main">
+          <div className="row">
 
-        <div className="row">
+            <DashboardCard stats={this.state.stats} />
+            <GraphCard />
 
-          <DashboardCard stats={this.state.stats} />
-          <GraphCard />
+          </div>
 
+          <div className="row">
+
+            <ListCard visitors={this.state.visitors}/>
+            <UserClustering visitors={this.state.visitors}/>
+
+          </div>
         </div>
-
-        <div className="row">
-
-          <ListCard visitors={this.state.visitors}/>
-          <UserClustering visitors={this.state.visitors}/>
-
+        
+        <div className="column">
+            <InfoCard />
         </div>
 
       </div>
