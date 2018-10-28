@@ -16,14 +16,14 @@
 }
 
 .logo {
-    margin-left: 0px;
+    margin-left: 10px;
     line-height: 50px;
     display: flex;
 }
 
 .logo img {
-    width: 120px;
-    height: 50px;
+    width: 150px;
+    height: 70px;
     align-self: center;
 }
 
