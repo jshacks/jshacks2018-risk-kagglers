@@ -27,6 +27,10 @@ class InfoCard extends Component {
                     <div class="slidecontainer">
                         <input type="range" min="1" max="100" value="30" class="slider" id="myRange" />
                     </div>
+                    <div className="subtitle">Discount percentage</div>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="15" class="slider" id="myRange" />
+                    </div>
                 </div>
             </div>
 
