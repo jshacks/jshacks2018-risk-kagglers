@@ -16,20 +16,20 @@ class InfoCard extends Component {
                         <div>Safari</div>
                     </div>
                     <div className="subtitle">Page Visits</div>
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="10" class="slider" id="myRange" />
+                    <div className="slidecontainer">
+                        <input type="range" min="1" max="100" value="10" className="slider" id="myRange" />
                     </div>
                     <div className="subtitle">Ads frequency</div>
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange" />
+                    <div className="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" className="slider" id="myRange" />
                     </div>
                     <div className="subtitle">Revenue</div>
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="30" class="slider" id="myRange" />
+                    <div className="slidecontainer">
+                        <input type="range" min="1" max="100" value="30" className="slider" id="myRange" />
                     </div>
                     <div className="subtitle">Discount percentage</div>
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="15" class="slider" id="myRange" />
+                    <div className="slidecontainer">
+                        <input type="range" min="1" max="100" value="15" className="slider" id="myRange" />
                     </div>
                 </div>
             </div>

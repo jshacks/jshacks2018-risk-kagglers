@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScatterChart, XAxis, YAxis, CartesianGrid, Legend, Tooltip, Scatter } from 'recharts';
+import { ScatterChart, XAxis, YAxis, CartesianGrid, Tooltip, Scatter } from 'recharts';
 import './UserClustering.css';
 
 class UserClustering extends Component {
@@ -18,8 +18,7 @@ class UserClustering extends Component {
                     <YAxis dataKey={'y'} type="number" name="Revenue"/>
                     <Scatter name='Customer' data={data} fill='#8884d8'/>
                     <Tooltip cursor={{strokeDasharray: '3 3'}}/>
-                    <Legend />
-                </ScatterChart>
+                </ScatterChart  >
             </div>
 
 		);
