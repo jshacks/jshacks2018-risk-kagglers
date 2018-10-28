@@ -1,9 +1,9 @@
 .main {
-	flex: 1;
-	padding: 60px;
-	overflow: auto;
+    flex: 1;
+    padding: 60px;
+    overflow: auto;
 }
 
 .row {
-	display: flex;
+    display: flex;
 }

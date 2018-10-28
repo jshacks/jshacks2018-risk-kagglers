@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 import userImage from '../t_user.jpg';
+import logo from '../logo3.svg';
 
 class Header extends Component {
   render() {
@@ -9,7 +10,7 @@ class Header extends Component {
         <button className="menu_button square">
           <i className="fas fa-bars"></i>
         </button>
-        <button className="logo">logo</button>
+        <a className="logo" href="/index.html"><img src={logo} alt="logo"/></a>
         <button className="notification_button square">
           <i className="fas fa-bell"></i>
         </button>
