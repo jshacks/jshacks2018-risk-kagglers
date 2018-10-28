@@ -5,11 +5,15 @@
     height: auto;
     margin: 20px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-stats {
     padding: 30px 30px 20px 30px;
-    border-bottom: 1px solid #E6E7EB;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .medium-title {
@@ -38,7 +42,7 @@
 }
 
 .large-button {
-    margin: 50px 0px 20px 0px;
+    margin: auto 0px 40px 0px;
     padding: 10px 0px;
     background: #4C84FF;
     border-radius: 25px;
@@ -70,6 +74,7 @@
 .card-footer {
     padding: 40px 30px;
     display: flex;
+    border-top: 1px solid #E6E7EB;
 }
 
 .small-label {

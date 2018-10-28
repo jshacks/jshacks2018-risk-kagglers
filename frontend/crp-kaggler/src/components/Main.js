@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './Main.css';
-import './dashboardcard/DashboardCard';
 import DashboardCard from './dashboardcard/DashboardCard';
-import './graphcard/GraphCard';
 import GraphCard from './graphcard/GraphCard';
+import ListCard from './ListCard';
 
 class Main extends Component {
 
@@ -20,14 +19,20 @@ class Main extends Component {
   render() {
     return (
       <div className="main">
-      
-        <DashboardCard stats={this.state.stats}>
 
-        </DashboardCard>
+        <div className="row">
 
-        <GraphCard>
+          <DashboardCard stats={this.state.stats} />
+          <GraphCard />
 
-        </GraphCard>
+        </div>
+
+        <div className="row">
+
+          <ListCard />
+
+        </div>
+
       </div>
     );
   }
