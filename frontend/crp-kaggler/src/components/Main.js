@@ -3,6 +3,7 @@ import './Main.css';
 import DashboardCard from './dashboardcard/DashboardCard';
 import GraphCard from './graphcard/GraphCard';
 import ListCard from './ListCard';
+import UserClustering from './UserClustering';
 
 class Main extends Component {
 
@@ -42,6 +43,7 @@ class Main extends Component {
         <div className="row">
 
           <ListCard visitors={this.state.visitors}/>
+          <UserClustering visitors={this.state.visitors}/>
 
         </div>
 
