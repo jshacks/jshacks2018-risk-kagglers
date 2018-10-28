@@ -17,19 +17,19 @@ class InfoCard extends Component {
                     </div>
                     <div className="subtitle">Page Visits</div>
                     <div className="slidecontainer">
-                        <input type="range" min="1" max="100" value="10" className="slider" id="myRange" />
+                        <input type="range" min="1" max="100" defaultValue="10" className="slider" id="myRange" />
                     </div>
                     <div className="subtitle">Ads frequency</div>
                     <div className="slidecontainer">
-                        <input type="range" min="1" max="100" value="50" className="slider" id="myRange" />
+                        <input type="range" min="1" max="100" defaultValue="50" className="slider" id="myRange" />
                     </div>
                     <div className="subtitle">Revenue</div>
                     <div className="slidecontainer">
-                        <input type="range" min="1" max="100" value="30" className="slider" id="myRange" />
+                        <input type="range" min="1" max="100" defaultValue="30" className="slider" id="myRange" />
                     </div>
                     <div className="subtitle">Discount percentage</div>
                     <div className="slidecontainer">
-                        <input type="range" min="1" max="100" value="15" className="slider" id="myRange" />
+                        <input type="range" min="1" max="100" defaultValue="15" className="slider" id="myRange" />
                     </div>
                 </div>
             </div>
