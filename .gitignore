@@ -2,4 +2,6 @@
 .ipynb_checkpoints
 ml/in/*.csv
 !ml/in/submission*.csv
+*.pyproj
+*.sln
 **/**/node_modules

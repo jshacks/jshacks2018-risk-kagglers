@@ -5,16 +5,20 @@
     height: auto;
     margin: 20px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-stats {
     padding: 30px 30px 20px 30px;
-    border-bottom: 1px solid #E6E7EB;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .medium-title {
     font-size: 0.9rem;
-    padding-bottom: 5px;
+    margin-bottom: 1em;
     color: #8C94A7;
     font-weight: 500;
     text-transform: uppercase;
@@ -23,7 +27,6 @@
 .large-font {
     font-size: 2em;
     font-weight: bolder;
-    padding: 20px 0 0 0;
     color: #1A233C;
 }
 
@@ -38,7 +41,7 @@
 }
 
 .large-button {
-    margin: 50px 0px 20px 0px;
+    margin: auto 0px;
     padding: 10px 0px;
     background: #4C84FF;
     border-radius: 25px;
@@ -70,6 +73,7 @@
 .card-footer {
     padding: 40px 30px;
     display: flex;
+    border-top: 1px solid #E6E7EB;
 }
 
 .small-label {

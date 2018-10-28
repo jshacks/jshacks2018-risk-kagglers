@@ -1,72 +1,39 @@
 import React, { Component } from 'react';
 import './graph.css';
-import ReactFC from 'react-fusioncharts';
-import FusionCharts from 'fusioncharts';
-import Column2D from 'fusioncharts/fusioncharts.charts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-// import PowerChart from 'fusioncharts/fusioncharts.powercharts';
-// import WidgetsCharts from 'fusioncharts/fusioncharts.widgets';
-// import GanntCharts from 'fusioncharts/fusioncharts.gantt';
-// import TreemapChart from 'fusioncharts/fusioncharts.treemap';
-// import Zoomscatter from 'fusioncharts/fusioncharts.zoomscatter';
+import { BarChart, XAxis, YAxis, Bar, Legend, Tooltip } from 'recharts';
 
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
-//the json
-const chartConfigs = {
-    type: 'line',// The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: { 
-        // Chart Configuration 
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        },{
-            "label": "Romania",
-            "value": "10"
-        }]
-    }
-};
+
 
 class GraphCardContent extends Component {
 	render() {
-	     return (
-	     	<div className="graph-content">
-	     <ReactFC
-	        {...chartConfigs}/>
-	        </div>
-	     );
+        const data = [
+            {name: 'January', 2017: 4000, 2018: 2400, amt: 2400},
+            {name: 'February', 2017: 3000, 2018: 1398, amt: 2210},
+            {name: 'March', 2017: 2000, 2018: 4800, amt: 2290},
+            {name: 'April', 2017: 2780, 2018: 3908, amt: 2000},
+            {name: 'May', 2017: 1890, 2018: 4800, amt: 2181},
+            {name: 'June', 2017: 2390, 2018: 3800, amt: 2500},
+            {name: 'July', 2017: 3490, 2018: 4300, amt: 2100},
+            {name: 'August', 2017: 2018, 2018: 3000, amt: 2100},
+            {name: 'September', 2017: 3490, 2018: 4300, amt: 2100},
+            {name: 'October', 2017: 2000, 2018: 4300, amt: 2100},
+            {name: 'November', 2017: 3490, 2018: 3908, amt: 2100},
+            {name: 'December', 2017: 2780, 2018: 4800, amt: 2100}
+        ];
+        return (
+            <div className="graph-content">
+            <div className="medium-title">Last year vs this year</div>
+            <br />
+            <BarChart width={500} height={250} data={data}>
+            <XAxis dataKey="name"  />
+            <YAxis />
+            <Bar dataKey="2017" fill="#FEC400" />
+            <Bar dataKey="2018" fill="#4C84FF" />
+            <Tooltip />
+            <Legend />
+            </BarChart>
+            </div>
+        );
 	  }
 
 }
