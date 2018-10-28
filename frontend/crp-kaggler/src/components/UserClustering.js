@@ -10,13 +10,13 @@ class UserClustering extends Component {
 		return (
             <div className="graph_card">
                 
-                <div className="medium-title">User Clustering</div>
-
+                <div className="medium-title">Customers Clustering</div>
+                
                 <ScatterChart width={500} height={250} margin={{top: 20, right: 20, bottom: 20, left: 20}}>
                     <CartesianGrid />
-                    <XAxis dataKey={'x'} type="number" name='stature' unit=''/>
-                    <YAxis dataKey={'y'} type="number" name='weight' unit=''/>
-                    <Scatter name='A school' data={data} fill='#8884d8'/>
+                    <XAxis dataKey={'x'} type="number" name="Page visits"/>
+                    <YAxis dataKey={'y'} type="number" name="Revenue"/>
+                    <Scatter name='Customer' data={data} fill='#8884d8'/>
                     <Tooltip cursor={{strokeDasharray: '3 3'}}/>
                     <Legend />
                 </ScatterChart>
