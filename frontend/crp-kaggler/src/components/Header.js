@@ -7,10 +7,10 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <button className="menu_button square">
+        <button className="menu_button square" onClick={this.props.toggleMenu}>
           <i className="fas fa-bars"></i>
         </button>
-        <a className="logo" href="/index.html"><img src={logo} alt="logo"/></a>
+        <a className="logo" href="/index.html" ><img src={logo} alt="logo"/></a>
         <button className="notification_button square">
           <i className="fas fa-bell"></i>
         </button>
